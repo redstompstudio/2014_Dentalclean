@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: f38e32ec98e3d3e40afad5b7eef744e6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HelpIcons_0
+    21300002: HelpIcons_1
+    21300004: HelpIcons_2
+    21300006: HelpIcons_3
+    21300008: HelpIcons_4
+    21300010: HelpIcons_7
+    21300012: HelpIcons_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 0
+  textureType: 5
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 256
+    textureFormat: 12
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: HelpIcons_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 194
+        width: 52
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 194
+        width: 52
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 143
+        width: 76
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 198
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 46
+        width: 65
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 34
+        width: 74
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HelpIcons_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 8
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
