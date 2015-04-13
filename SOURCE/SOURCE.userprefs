@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Panels\Catalogs\Catalogos_Categorias\CatalogInfantilCategorias.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Panels\Catalogs\Catalogos_Categorias\CatalogInfantilCategorias.cs" Line="101" Column="82" />
+      <File FileName="Assets\Scripts\Panels\Catalogs\Escovas\Catalog_Escovas_Infantil.cs" Line="100" Column="70" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

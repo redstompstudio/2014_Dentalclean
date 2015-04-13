@@ -96,6 +96,7 @@ public class Catalog_Escovas_Infantil : NewBasePanel
 	public void OnClickLicenciadasButton()
 	{
 		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas");
+//		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas");
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_InfantilCategorias");
 	}
 }

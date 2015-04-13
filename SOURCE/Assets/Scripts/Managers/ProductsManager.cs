@@ -34,13 +34,13 @@ public class ProductsManager : MonoBehaviour
 			productsDictionary.Add(pItem.productID, pItem);
 			productsList.Add(pItem);
 #if UNITY_EDITOR
-			Debug.Log("ProductsManager : Added : " + pItem.productID);
+//			Debug.Log("ProductsManager : Added : " + pItem.productID);
 #endif
 		}
 		else
 		{
 #if UNITY_EDITOR
-			Debug.LogError("ProductsManager : Already Contains : " + pItem.productID);
+//			Debug.LogError("ProductsManager : Already Contains : " + pItem.productID);
 #endif
 		}
 	}
@@ -54,7 +54,7 @@ public class ProductsManager : MonoBehaviour
 		else
 		{
 #if UNITY_EDITOR
-			Debug.LogError("Product Manager : Product: " + pProductID + " not found!");
+//			Debug.LogError("Product Manager : Product: " + pProductID + " not found!");
 #endif
 			return null;
 		}

@@ -1,26 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Catalog_Escovas_Adulto : NewBasePanel
+public class CatalogInfantilCategorias : NewBasePanel
 {
 	public NewBaseButton backButton;
 	public UITweener[] tweens;
 	
-	public NewBaseButton premiumButton;
-	public NewBaseButton valorButton;
-	public NewBaseButton popularButton;
-	public NewBaseButton promocionalButton;
-	public NewBaseButton economicaButton;
+	public NewBaseButton batmanButton;
+	public NewBaseButton garfieldButton;
+	public NewBaseButton scoobyDooButton;
+	public NewBaseButton peppaPigButton;
 	
 	protected override void Awake ()
 	{
 		base.Awake ();
 		
-		premiumButton.AddOnClickListener(OnClickPremiumButton);
-		valorButton.AddOnClickListener(OnClickValorButton);
-		popularButton.AddOnClickListener(OnClickPopularButton);
-		promocionalButton.AddOnClickListener(OnClickPromocionalButton);
-		economicaButton.AddOnClickListener(OnClickEconomicaButton);
+		batmanButton.AddOnClickListener(OnClickBatmanButton);
+		garfieldButton.AddOnClickListener(OnClickGarfieldButton);
+		scoobyDooButton.AddOnClickListener(OnClickScoobyDooButton);
+		peppaPigButton.AddOnClickListener(OnClickPeppaPigButton);
 	}
 	
 	public override void Show ()
@@ -45,8 +43,9 @@ public class Catalog_Escovas_Adulto : NewBasePanel
 		
 		NewUIManager.Instance.GetButton("Button_MM_Help").DisableButton();
 		NewUIManager.Instance.GetButton("Button_MM_DC").DisableButton();
+		
 		NewUIManager.Instance.AddBackButtonDelegate(OnClickBackButton);
-
+		
 		base.Show ();
 	}
 	
@@ -70,12 +69,13 @@ public class Catalog_Escovas_Adulto : NewBasePanel
 	
 	public void OnClickBackButton()
 	{
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_AdultoInfantil");
 		Hide();
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil");
 	}
 	
 	public void OnFinishedShowing()
 	{
+
 	}
 	
 	public void OnFinishedHiding()
@@ -84,33 +84,27 @@ public class Catalog_Escovas_Adulto : NewBasePanel
 		panelImage.enabled = false;
 	}
 	
-	public void OnClickPremiumButton()
+	public void OnClickBatmanButton()
 	{
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas_Batman");
 		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Premium_Adulto");
 	}
 	
-	public void OnClickValorButton()
+	public void OnClickGarfieldButton()
 	{
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas_Garfield");
 		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Valor_Adulto");
-	}
-	
-	public void OnClickPopularButton()
-	{
-		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Popular_Adulto");
-	}
-	
-	public void OnClickPromocionalButton()
-	{
-		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Promocional_Adulto");
 	}
 
-	public void OnClickEconomicaButton()
+	public void OnClickScoobyDooButton()
 	{
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas_ScoobyDoo");
 		Hide();
-		NewUIManager.Instance.EnablePanel("Panel_Escovas_Economica_Adulto");
+	}
+
+	public void OnClickPeppaPigButton()
+	{
+		NewUIManager.Instance.EnablePanel("Panel_Escovas_Infantil_Licenciadas_PeppaPig");
+		Hide();
 	}
 }
