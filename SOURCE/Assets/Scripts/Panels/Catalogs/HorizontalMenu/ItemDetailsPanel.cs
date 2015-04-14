@@ -89,9 +89,6 @@ public class ItemDetailsPanel : NewBasePanel
 		}
 
 		base.Hide();
-
-//		panelGO.SetActive(false);
-//		panelImage.enabled = false;
 	}
 
 	public void ShowInfoPanel(string pInfoName)
@@ -155,6 +152,9 @@ public class ItemDetailsPanel : NewBasePanel
 	public void OnFinishedShowing()
 	{
 		tweensPlayingCount--;
+
+		if(tweensPlayingCount <= 0)
+			ShowInfoPanel("Informacao");
 	}
 
 	public void OnFinishedHiding()

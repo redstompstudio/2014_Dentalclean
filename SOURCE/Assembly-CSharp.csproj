@@ -277,6 +277,7 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WordBehaviour.cs" />
      <Compile Include="Assets\Scripts\Base\NewBaseButton.cs" />
      <Compile Include="Assets\Scripts\Base\NewBasePanel.cs" />
+     <Compile Include="Assets\Scripts\Button\NavigationButton.cs" />
      <Compile Include="Assets\Scripts\DB\LabelsDataBase.cs" />
      <Compile Include="Assets\Scripts\DB\ProductsDataBase.cs" />
      <Compile Include="Assets\Scripts\LockScreen\LockScreenScript.cs" />
