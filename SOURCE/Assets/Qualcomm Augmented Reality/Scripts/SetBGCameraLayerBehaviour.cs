@@ -14,4 +14,9 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class SetBGCameraLayerBehaviour : SetBGCameraLayerAbstractBehaviour
 {
+	void OnGUI()
+	{
+		if(ShowCameraProperties.instance != null && ShowCameraProperties.instance.cam == null)
+			ShowCameraProperties.instance.cam = camera;
+	}
 }

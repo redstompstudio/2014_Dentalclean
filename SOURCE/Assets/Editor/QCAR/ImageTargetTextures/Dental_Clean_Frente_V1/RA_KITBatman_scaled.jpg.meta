@@ -45,6 +45,10 @@ TextureImporter:
     maxTextureSize: 32
     textureFormat: 10
     compressionQuality: 50
+  - buildTarget: iPhone
+    maxTextureSize: 32
+    textureFormat: 30
+    compressionQuality: 50
   spriteSheet:
     sprites: []
   spritePackingTag: Atlas_RA_Frente

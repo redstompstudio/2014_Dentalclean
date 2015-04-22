@@ -8,4 +8,15 @@ using UnityEngine;
 
 public class BGRenderingBehaviour : BGRenderingAbstractBehaviour
 {
+	void OnEnable()
+	{
+		Debug.Log("######################################################################## ON ENABLE BG RENDERING");
+	}
+
+	void Start()
+	{
+		Debug.Log("######################################################################## ON START BG RENDERING");
+
+
+	}
 }

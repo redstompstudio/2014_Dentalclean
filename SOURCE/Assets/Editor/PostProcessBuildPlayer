@@ -364,7 +364,7 @@ def process_iPhoneView(iPhoneView_filename):
             line = lines[i]
            
             #change for Unity 4.3
-            if line.strip()[0:40] == 'static ScreenOrientation\t_curOrientation':
+            if line.strip()[0:40] == 'static ScreenOrientation _curOrientation' or line.strip()[0:40] == 'static ScreenOrientation  _curOrientation':
                 iPhoneView.write('ScreenOrientation _curOrientation = orientationUnknown;\n');
                 skip = True
 
