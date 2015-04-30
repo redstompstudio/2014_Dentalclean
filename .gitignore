@@ -20,3 +20,13 @@ sysinfo.txt
 SOURCE/Assembly-CSharp-Editor.csproj
 SOURCE/Assembly-CSharp-Editor-vs.csproj
 SOURCE/Assembly-CSharp.csproj
+
+*.csproj
+
+SOURCE/Assembly-CSharp-Editor-vs.csproj
+
+SOURCE/Assembly-CSharp-Editor.csproj
+
+SOURCE/Assembly-CSharp-vs.csproj
+
+SOURCE/Assembly-CSharp.csproj
