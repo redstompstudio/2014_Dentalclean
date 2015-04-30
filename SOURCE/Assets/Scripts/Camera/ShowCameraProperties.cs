@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Vuforia;
 
 public class ShowCameraProperties : MonoBehaviour 
 {
+	/*
 	public static ShowCameraProperties instance;
 
 	public Camera cam;
@@ -42,4 +44,5 @@ public class ShowCameraProperties : MonoBehaviour
 			cam.rect = camRect;
 		}
 	}
+	*/
 }

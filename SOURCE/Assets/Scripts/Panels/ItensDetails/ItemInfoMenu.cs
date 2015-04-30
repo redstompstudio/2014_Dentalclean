@@ -106,7 +106,7 @@ public class ItemInfoMenu : MonoBehaviour
 		else
 			publicoButton.DisableButton();
 
-		tween.to.y = (enabledOptionsCount) * (90.0f);
+		tween.to.y = (enabledOptionsCount) * (70.0f);
 	}
 
 	public void OnShow()
