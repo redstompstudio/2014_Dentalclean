@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Vuforia;
 
 public class DCTrackableProduct : MonoBehaviour, ITrackableEventHandler
 {
@@ -40,7 +41,7 @@ public class DCTrackableProduct : MonoBehaviour, ITrackableEventHandler
 	private void OnTrackingFound()
 	{
 #if UNITY_EDITOR
-		Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+//		Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 #endif
 		isTracking = true;
 		ProductsManager.Instance.GetProduct(productID).OnClickButton();
@@ -49,7 +50,7 @@ public class DCTrackableProduct : MonoBehaviour, ITrackableEventHandler
 	private void OnTrackingLost()
 	{
 #if UNITY_EDITOR
-		Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+//		Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
 #endif
 		isTracking = false;
 	}
