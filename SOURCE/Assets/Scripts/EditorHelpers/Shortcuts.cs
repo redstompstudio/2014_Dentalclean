@@ -5,7 +5,7 @@ using System.Collections;
 
 public class Shortcuts : MonoBehaviour 
 {
-	[MenuItem("Shortcuts/GO Activate-Deactivate #g")]
+	[MenuItem("Shortcuts/GO Activate-Deactivate &#g")]
 	static void EnableDisableGo()
 	{
 		if(Selection.gameObjects != null && Selection.gameObjects.Length > 0)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Fio_Peppa_Infantil" size="1.000000 0.677966" />
+    <ImageTarget name="Fita_FlossPremium" size="1.000000 0.500000" />
+    <ImageTarget name="Fita_FitPlus" size="1.000000 0.500000" />
+    <ImageTarget name="Fita_FitKids" size="1.000000 0.500000" />
+    <ImageTarget name="Fita_100metros_Adulto" size="1.000000 0.500000" />
+    <ImageTarget name="Fita_50metros_Adulto" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_ScoobyDoo_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_Garfield_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_Batman50metros_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_100metros_Adulto" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_50metros_Adulto" size="1.000000 0.500000" />
+    <ImageTarget name="Fio_25metros_Adulto" size="1.000000 0.500000" />
+  </Tracking>
+</QCARConfig>

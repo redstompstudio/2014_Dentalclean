@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="LinhaPro_Escova_InterdentalCilindrica06" size="1.000000 1.418301" />
+    <ImageTarget name="LinhaPro_Escova_InterdentalCilindrica05" size="1.000000 1.312500" />
+    <ImageTarget name="LinhaPro_Escova_InterdentalCilindrica04" size="1.000000 1.291391" />
+    <ImageTarget name="LinhaPro_Fio_500m" size="1.000000 2.173653" />
+    <ImageTarget name="LinhaPro_Escova_UnoSlim" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_UnoPRO" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_UnoInterdental" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_Sensitive5500" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_ProtesePlus" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_PosCirurgica" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_Ortodontica" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_KitOrtodontico" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_KitInterOrto" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_InterdentalConica" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_IdealPerio" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Escova_Duo" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Comp_PassaFio" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Comp_CeraOrtodontica" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Antis_ClinexidinZero" size="1.000000 0.500000" />
+    <ImageTarget name="LinhaPro_Antis_Clinexidin" size="1.000000 0.500000" />
+  </Tracking>
+</QCARConfig>

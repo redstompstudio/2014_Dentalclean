@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Escova_PeppaEscolar" size="1.000000 0.533230" />
+    <ImageTarget name="Escova_Peppa3d" size="1.000000 0.583740" />
+    <ImageTarget name="Escova_Marine" size="1.000000 3.333333" />
+    <ImageTarget name="Escova_OK" size="1.000000 1.709677" />
+    <ImageTarget name="Escova_IdealIntelligent" size="1.000000 2.219512" />
+    <ImageTarget name="Escova_ScoobyDoo3D" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_ScoobyDoo" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_Relax" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_PopColor" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_Perfect" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_MetallicPlus" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_KitInfantilScooby" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_KitInfantilGarfield" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_KitInfantilBatman" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_InfantilEscolar" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_Garfield3D" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_Garfield" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_FineTip" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_Dual" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_DoctorDuck" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_DentalViagem" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_CristalWave" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_CristalFlat" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_ColorPlus" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_BatmanTeen" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_BatmanPremium" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_BatmanEscolar" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_BasicColor" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_BasicColor_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_AdultaPromocional" size="1.000000 0.500000" />
+    <ImageTarget name="Escova_AcquaPlus" size="1.000000 0.500000" />
+  </Tracking>
+</QCARConfig>

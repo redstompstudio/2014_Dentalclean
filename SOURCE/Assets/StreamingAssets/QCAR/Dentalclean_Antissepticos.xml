@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Antis_Peppa" size="1.000000 0.637363" />
+    <ImageTarget name="Antis_ScoobyDoo_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_H2CleanMenta" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_H2CleanIceSpray" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_H2CleanHortela" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_H2CleanExtNaturais" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_Garfield_Infantil" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_DentalcleanZero" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_DentalcleanIce" size="1.000000 0.500000" />
+    <ImageTarget name="Antis_Batman_Infantil" size="1.000000 0.500000" />
+  </Tracking>
+</QCARConfig>
