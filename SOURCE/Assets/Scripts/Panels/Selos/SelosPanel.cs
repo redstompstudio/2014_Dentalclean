@@ -126,6 +126,8 @@ public class SelosPanel : NewBasePanel
 		else
 			OnFinishedHiding();
 
+		ItemDetailsPanel.instance.Show();
+
 		base.Hide ();
 	}
 

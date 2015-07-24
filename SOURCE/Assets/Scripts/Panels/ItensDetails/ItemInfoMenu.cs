@@ -22,6 +22,8 @@ public class ItemInfoMenu : MonoBehaviour
 	
 	public int enabledOptionsCount;
 
+	public ItemSettings currentItem;
+
 	void Awake()
 	{
 		openButton.AddOnClickListener(OnClickOpenInfo);
@@ -39,6 +41,7 @@ public class ItemInfoMenu : MonoBehaviour
 
 	public void OnOpen(ItemSettings pItem)
 	{
+		currentItem = pItem;
 		enabledOptionsCount = 1;
 
 		if(pItem.texturas != null && pItem.texturas.Length > 0)

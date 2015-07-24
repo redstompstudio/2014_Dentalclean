@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Vuforia;
 
 public class NewMainMenuPanel : NewBasePanel 
 {
@@ -26,13 +27,19 @@ public class NewMainMenuPanel : NewBasePanel
 		panelGO.SetActive(true);
 		panelImage.enabled = true;
 
-//		dentalCleanButton.GetAsButton().onClick.AddListener(OnClickedDentalCleanButton);
-//		helpButton.GetAsButton().onClick.AddListener(OnClickedAjudaButton);
-//		catalogButton.GetAsButton().onClick.AddListener(OnClickedCatalogoButton);
+		NewUIManager.Instance.AddBackButtonDelegate(OnClickBackButton);
 
 		textMainMenu.text = "<color=#ED1C24>CLIQUE NOS BOTÕES ABAIXO</color> PARA MAIS INFORMAÇÕES\n OU <color=#ED1C24>APONTE A CÂMERA PARA ALGUM PRODUTO DENTALCLEAN.</color>";
 
 		base.Show ();
+	}
+
+	public override void OnClickBackButton()
+	{
+#if UNITY_EDITOR
+		Debug.Log("EXIT!!!!!!!!!!!!!!!!!");
+#endif
+		Application.Quit();
 	}
 
 	public override void Hide ()

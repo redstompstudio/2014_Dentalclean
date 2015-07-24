@@ -22,9 +22,7 @@ public class DCTrackableProduct : MonoBehaviour, ITrackableEventHandler
 	/// Implementation of the ITrackableEventHandler function called when the
 	/// tracking state changes.
 	/// </summary>
-	public void OnTrackableStateChanged(
-		TrackableBehaviour.Status previousStatus,
-		TrackableBehaviour.Status newStatus)
+	public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
 	{
 		if (newStatus == TrackableBehaviour.Status.DETECTED ||
 		    newStatus == TrackableBehaviour.Status.TRACKED ||
@@ -43,8 +41,11 @@ public class DCTrackableProduct : MonoBehaviour, ITrackableEventHandler
 #if UNITY_EDITOR
 //		Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 #endif
-		isTracking = true;
-		ProductsManager.Instance.GetProduct(productID).OnClickButton();
+		if(NewUIManager.Instance.IsPanelEnabled("Panel_MainMenu"))
+		{
+			isTracking = true;
+			ProductsManager.Instance.GetProduct(productID).OnItemTracked();
+		}
 	}
 
 	private void OnTrackingLost()

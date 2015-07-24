@@ -65,7 +65,8 @@ public class SeloInfos : MonoBehaviour
 
 	void OnClick()
 	{
-		SelosPanel.instance.OnOpen(this);
+		//SelosPanel.instance.OnOpen(this);
+		ItemDetailsPanel.instance.OnClickedOnSelo(this);
 		seloMaior.SetActive(true);
 	}
 }

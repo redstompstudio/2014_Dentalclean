@@ -27,4 +27,9 @@ public class NewBasePanel : MonoBehaviour
 	{
 		isVisible = false;
 	}
+
+	public virtual void OnClickBackButton()
+	{
+		Debug.Log("On Back: " + panelName);
+	}
 }

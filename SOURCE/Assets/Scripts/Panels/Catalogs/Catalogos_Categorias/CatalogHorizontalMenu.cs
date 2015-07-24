@@ -69,6 +69,12 @@ public class CatalogHorizontalMenu : NewBasePanel
 		Hide();
 	}
 
+	public void OnSelectedProduct(ItemSettings pItem)
+	{
+		ItemDetailsPanel.instance.Show(pItem, panelName);
+		Hide ();
+	}
+
 	public void OnFinishedShowing()
 	{
 	}

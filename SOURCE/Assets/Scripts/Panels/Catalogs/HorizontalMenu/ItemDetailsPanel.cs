@@ -7,9 +7,9 @@ public class ItemDetailsPanel : NewBasePanel
 	public static ItemDetailsPanel instance;
 
 	public int tweensPlayingCount;
-
-	public UnityEngine.UI.Image itemImage;
-	public UnityEngine.UI.Image logoImage;
+	
+	public Image itemImage;
+	public Image logoImage;
 
 	public Text infoText;
 	public GameObject listTexturas;
@@ -24,15 +24,25 @@ public class ItemDetailsPanel : NewBasePanel
 	public ItemInfoMenu infoMenu;
 
 	public NewBaseButton exitButton;
+	public NewBaseButton textInfoButton;
 
 	public UITweener[] tweens;
+
+	public ItemSettings currentItem;
+
+	public ItemInfoDraggable itemInfoDraggable;
+	private string prevPanelName = "";
 
 	protected override void Awake ()
 	{
 		instance = this;
 		base.Awake();
 
-		exitButton.AddOnClickListener(Hide);
+//		exitButton.AddOnClickListener(Hide);
+		exitButton.AddOnClickListener(OnClickBackButton);
+
+		if(itemInfoDraggable == null)
+			itemInfoDraggable = GetComponentInChildren<ItemInfoDraggable>();
 	}
 
 	public override void Show ()
@@ -55,14 +65,17 @@ public class ItemDetailsPanel : NewBasePanel
 			}
 		}
 
-		NewUIManager.Instance.AddBackButtonDelegate(Hide);
+		NewUIManager.Instance.AddBackButtonDelegate(OnClickBackButton);
 
 		base.Show ();
 	}
 
-	public void Show (ItemSettings pItem)
+	public void Show (ItemSettings pItem, string pPrevPanel = null)
 	{
+		currentItem = pItem;
 		infoMenu.OnOpen(pItem);
+
+		prevPanelName = pPrevPanel;
 
 		infoText.text = pItem.itemInformationText;
 		itemImage.sprite = pItem.catalogImage;
@@ -89,6 +102,14 @@ public class ItemDetailsPanel : NewBasePanel
 		}
 
 		base.Hide();
+	}
+
+	public override void OnClickBackButton()
+	{
+		if(prevPanelName != null)
+			NewUIManager.Instance.EnablePanel(prevPanelName);
+
+		Hide ();
 	}
 
 	public void ShowInfoPanel(string pInfoName)
@@ -163,8 +184,14 @@ public class ItemDetailsPanel : NewBasePanel
 
 		if(tweensPlayingCount == 0)
 		{
+			itemInfoDraggable.Reset();
 			panelGO.SetActive(false);
 			panelImage.enabled = false;
 		}
+	}
+	public void OnClickedOnSelo(SeloInfos pSeloInfo)
+	{
+		SelosPanel.instance.OnOpen(pSeloInfo);
+		Hide ();
 	}
 }

@@ -35,7 +35,7 @@ public class NewCatalogPanel : NewBasePanel
 
 		backButton.EnableButton();
 		backButton.GetAsButton().onClick.RemoveAllListeners();
-		backButton.GetAsButton().onClick.AddListener(Hide);
+		backButton.GetAsButton().onClick.AddListener(OnBackButton);
 
 		panelImage.enabled = true;
 
@@ -52,7 +52,7 @@ public class NewCatalogPanel : NewBasePanel
 		NewUIManager.Instance.GetButton("Button_MM_Help").DisableButton();
 		NewUIManager.Instance.GetButton("Button_MM_DC").DisableButton();
 
-		NewUIManager.Instance.AddBackButtonDelegate(Hide);
+		NewUIManager.Instance.AddBackButtonDelegate(OnBackButton);
 
 		base.Show ();
 	}
@@ -73,9 +73,14 @@ public class NewCatalogPanel : NewBasePanel
 
 		NewUIManager.Instance.GetButton("Button_MM_Help").EnableButton();
 		NewUIManager.Instance.GetButton("Button_MM_DC").EnableButton();
-		NewUIManager.Instance.EnablePanel("Panel_MainMenu");
 
 		base.Hide ();
+	}
+
+	public void OnBackButton()
+	{
+		NewUIManager.Instance.EnablePanel("Panel_MainMenu");
+		Hide();
 	}
 	
 	public void OnFinishedShowing()

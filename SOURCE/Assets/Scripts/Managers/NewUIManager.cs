@@ -16,6 +16,7 @@ public class NewUIManager : MonoBehaviour
 	public delegate void OnBackButton();
 	public OnBackButton onBackButtonCallback;
 
+	private const string mainMenuPanelName = "Panel_MainMenu";
 
 	public static NewUIManager Instance
 	{
@@ -27,10 +28,31 @@ public class NewUIManager : MonoBehaviour
 		}
 	}
 
+#if DEBUG_OPENPANELS
+	public bool hasOpenPanel;
+	public int openedPanelsCount;
+#endif
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.Escape))
 			ExecuteOnBackButton();
+
+#if DEBUG_OPENPANELS
+		hasOpenPanel = false;
+		openedPanelsCount = 0;
+
+		foreach(string key in panelsDictionary.Keys)
+		{
+			if(panelsDictionary[key].isVisible)
+			{
+				hasOpenPanel = true;
+				Debug.Log(panelsDictionary[key].panelName);
+				openedPanelsCount++;
+			}
+		}
+
+		Debug.Log("###################");
+#endif
 	}
 
 	public void AddPanel(NewBasePanel pPanel)
@@ -44,6 +66,10 @@ public class NewUIManager : MonoBehaviour
 
 	public void EnablePanel(string pPanelName)
 	{
+#if UNITY_EDITOR
+		if(panelsDictionary[pPanelName].isVisible)
+			Debug.Log(pPanelName + " is activated!");
+#endif
 		if(panelsDictionary.ContainsKey(pPanelName) && !panelsDictionary[pPanelName].isVisible)
 		{
 			panelsDictionary[pPanelName].Show();
@@ -56,6 +82,11 @@ public class NewUIManager : MonoBehaviour
 		{
 			panelsDictionary[pPanelName].Hide();
 		}
+	}
+
+	public bool IsPanelEnabled(string pPanelName)
+	{
+		return panelsDictionary[pPanelName].isVisible;
 	}
 
 	public void AddButton(NewBaseButton pButton)
@@ -84,9 +115,7 @@ public class NewUIManager : MonoBehaviour
 	{
 		if(onBackButtonCallback != null)
 			onBackButtonCallback();
-		else
-			Debug.Log("CANNOT EXECUTE!");
-		
+
 //		onBackButtonCallback = null;
 	}
 }

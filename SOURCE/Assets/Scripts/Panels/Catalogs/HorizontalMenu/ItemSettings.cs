@@ -129,6 +129,7 @@ public class ItemSettings : MonoBehaviour
 	public USO_PRODUTOS[] usoProdutos;
 
 	private Button button;
+	private CatalogHorizontalMenu parentMenu;
 
 	void Awake()
 	{
@@ -143,15 +144,22 @@ public class ItemSettings : MonoBehaviour
 			
 		ProductsManager.Instance.AddProduct(this);
 
-//		if(catalogImage == null)
 		catalogImage = GetComponent<UnityEngine.UI.Image>().sprite;
+
+		if(parentMenu == null)
+			parentMenu = gameObject.GetComponentInParent<CatalogHorizontalMenu>();
 	}
 
 	public void OnClickButton()
 	{
-#if UNITY_EDITOR
-		Debug.Log("On Click Item : " + gameObject.name);
-#endif
-		ItemDetailsPanel.instance.Show(this);
+		parentMenu.OnSelectedProduct(this);
+//		ItemDetailsPanel.instance.Show(this);
+	}
+
+	public void OnItemTracked()
+	{
+		//CARALHO!
+		NewUIManager.Instance.DisablePanel("Panel_MainMenu");
+		ItemDetailsPanel.instance.Show(this, "Panel_MainMenu");
 	}
 }
